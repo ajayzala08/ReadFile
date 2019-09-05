@@ -1,0 +1,54 @@
+﻿@model WebApplication4.Models.tble_model
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Readwordfile</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div> 
+        <center>
+            <h2>
+                Output
+            </h2>
+            <table class="table table-bordered">
+                <tr>
+                    <td><b>Name : </b></td>
+                    <td>@Model.name</td>
+                </tr>
+                <tr>
+                    <td><b>Contact : </b></td>
+                    <td>@Model.cnt</td>
+                </tr>
+                <tr>
+                    <td><b>Qualification : </b></td>
+                    <td>@Model.qualification</td>
+                </tr>
+                <tr>
+                    <td><b>Email : </b></td>
+                    <td>@Model.email</td>
+                </tr>
+                <tr>
+                    <td><b>Current Company : </b></td>
+                    <td>@Model.company</td>
+                </tr>
+                <tr>
+                    <td><b>Current Designation : </b></td>
+                    <td>@Model.designation</td>
+                </tr>
+                <tr>
+                    <td><b>Current Location : </b></td>
+                    <td>@Model.location</td>
+                </tr>
+
+            </table>
+        </center>
+    </div>
+</body>
+</html>

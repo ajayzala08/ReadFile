@@ -1,0 +1,35 @@
+﻿@model WebApplication1.Models.ReadDataTableModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Readtabledata</title>
+</head>
+<body>
+    <div> 
+        <table class="table table-bordered">
+            <tr>
+                <td>Name : </td>
+                <td>@Model.name</td>
+            </tr>
+            <tr>
+                <td>Contact No : </td>
+                <td>@Model.cnt</td>
+            </tr>
+            <tr>
+                <td>Qualification : </td>
+                <td>@Model.qualification</td>
+            </tr>
+            <tr>
+                <td>Email Id : </td>
+                <td>@Model.email</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

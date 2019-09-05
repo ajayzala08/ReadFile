@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ReadWordFilePage</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("UploadandReadWordFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        { 
+            <div>Select Word File</div>
+    <input type="file" name="uploadfile" id="uploadfile" />
+
+            <input type="submit" value="Upload" />
+        } 
+    </div>
+</body>
+</html>
